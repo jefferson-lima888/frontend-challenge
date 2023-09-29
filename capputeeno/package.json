@@ -1,0 +1,30 @@
+{
+  "name": "capputeeno",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.35.3",
+    "@types/node": "20.6.1",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "axios": "^1.5.0",
+    "eslint": "8.49.0",
+    "eslint-config-next": "13.4.19",
+    "next": "13.4.19",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-component": "^2.8.0",
+    "styled-components": "^6.0.8",
+    "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@types/babel__core": "^7.20.1",
+    "@types/styled-components": "^5.1.27"
+  }
+}

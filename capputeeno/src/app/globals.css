@@ -1,0 +1,25 @@
+:root {
+  --border-radius: 12px;
+  --logo-color: #5D5D6D;
+  --bg-secondary: #F3F5F6;
+  --textos-dark: #737380;
+  --textos-dark-inputs: #41414D;
+  --delete-color: #DE3838;
+  --orange-low: #FFA585;
+  --shapes-dark-tooltip: #09090A;
+  --shapes-02: #DCE2E5;
+  --shapes-light: #F0F0F5;
+  --shapes-01: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
