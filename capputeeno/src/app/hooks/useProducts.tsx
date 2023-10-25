@@ -67,8 +67,8 @@ export const useProducts = () => {
     queryKey: ["products", type, priority],
   });
 
-  console.log(query);
-  console.log(data);
+  // console.log(query);
+  // console.log(data);
 
   const products = data?.data?.data?.allProducts;
   const filteredProducts = products?.filter((product) =>

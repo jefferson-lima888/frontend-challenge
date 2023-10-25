@@ -8,7 +8,7 @@ export const PrimaryInput = styled.input`
   padding: 0.5625rem 1rem;
   /* justify-content: center; */
   /* align-items: flex-start; */
-  width: 22rem;
+  width: 100%;
   /* gap: 5.625rem; */
   border: none;
   border-radius: 0.5rem;
@@ -16,19 +16,30 @@ export const PrimaryInput = styled.input`
 
   color: var(--textos-dark);
   font-family: inherit;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 400;
-  line-height: 1.375rem;
+  line-height: 1.25rem;
+
+  @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
 `;
 const InputContainer = styled.div`
   position: relative;
-  width: 22rem;
+  width: 15.625rem;
 
   svg {
     position: absolute;
     right: 1rem;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
+    width: 22rem;
+    margin-left: auto;
+    margin-right: 1.875rem;
   }
 `;
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {

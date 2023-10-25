@@ -21,14 +21,19 @@ const FilterItem = styled.li<FilterItemProps>`
   color: var(--textos-dark);
   text-align: center;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: ${(props) => (props.selected ? "600" : "400")};
-  line-height: 1.375rem;
+  line-height: 1.125rem;
   text-transform: uppercase;
   cursor: pointer;
 
   border-bottom: ${(props) =>
     props.selected ? "4px solid var(--orange-low)" : ""};
+
+  @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
 `;
 
 export const FilterByType = () => {

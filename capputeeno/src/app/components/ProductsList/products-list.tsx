@@ -7,7 +7,7 @@ interface ProductsListProps {}
 
 export const ProductsList: React.FC<ProductsListProps> = ({}) => {
   const { data } = useProducts();
-  console.log(data);
+  // console.log(data);
   return (
     <ListContainer>
       {data?.map((product) => (

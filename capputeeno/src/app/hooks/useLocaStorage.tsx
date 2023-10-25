@@ -1,13 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // type Props = {
 //     item: string,
 // }
 
-export const useLocalStorage = (item: string) => {
-  const [value, setValue] = useState(
-    JSON.parse(localStorage.getItem(item) ?? "")
-  );
+export const useLocalStorage = (item: string, initialValue: []) => {
+  // const [value, setValue] = useState(
+  //   JSON.parse(localStorage.getItem(item) ?? "")
+  // );
+  const [value, setValue] = useState(initialValue);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    let value = localStorage.getItem(item);
+    if (value) setValue(JSON.parse(value));
+  }, [item]);
 
   const updateLocalStorage = (newValue: any) => {
     setValue(newValue);
