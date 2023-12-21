@@ -1,4 +1,4 @@
-export const CartIcon = () => {
+export const BackwardIcon = () => {
   return (
     <svg
       width="24"
@@ -8,24 +8,22 @@ export const CartIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M4 7V5C4 4.44772 4.44772 4 5 4H19C19.5523 4 20 4.44772 20 5V7"
-        stroke="#737380"
+        d="M18.3639 5.63604C21.8787 9.15076 21.8787 14.8492 18.3639 18.3639C14.8492 21.8787 9.15074 21.8787 5.63604 18.3639C2.12132 14.8492 2.12132 9.15074 5.63604 5.63604C9.15076 2.12132 14.8492 2.12132 18.3639 5.63604"
+        stroke="#617480"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M20 7H4C3.44772 7 3 7.44772 3 8V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V8C21 7.44772 20.5523 7 20 7Z"
-        stroke="#737380"
+        d="M10 13L7.5 10.5L10 8"
+        stroke="#617480"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M16 11C16 13.2091 14.2091 15 12 15C9.79086 15 8 13.2091 8 11"
-        stroke="#737380"
+        d="M11.5 16H12.75C14.269 16 15.5 14.769 15.5 13.25V13.25C15.5 11.731 14.269 10.5 12.75 10.5H11.5H7.5"
+        stroke="#617480"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"

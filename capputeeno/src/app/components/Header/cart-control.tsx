@@ -4,17 +4,19 @@ import { CartIcon } from "../Icons/cart-icon";
 import { styled } from "styled-components";
 
 const CartCount = styled.span`
-  width: 23px;
-  height: 23px;
+  width: 1.438rem;
+  height: 1.438rem;
   background-color: var(--delete-color);
   color: #fff;
 
   position: absolute;
-  right: -15px;
-  top: 50%;
+  /* right: -15px;
+  top: 50%; */
+  margin-top: 1rem;
+  margin-left: -0.5rem;
   text-align: center;
-  border-radius: 16px;
-  font-size: 12px;
+  border-radius: 1rem;
+  font-size: 0.75rem;
   font-weight: 500;
   line-height: 1.525rem;
 `;

@@ -47,12 +47,15 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   handleChange: (value: string) => void;
 }
 
-export const PrimaryInputWSearchIcon = (props: InputProps) => {
+export const PrimaryInputWSearchIcon = ({
+  value,
+  handleChange,
+}: InputProps) => {
   return (
     <InputContainer>
       <PrimaryInput
-        onChange={(e) => props.handleChange(e.target.value)}
-        {...props}
+        onChange={(e) => handleChange(e.target.value)}
+        value={value}
       />
       <SearchIcon />
     </InputContainer>
